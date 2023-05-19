@@ -1,0 +1,421 @@
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.backToTop {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #c50ceb, #7edfce);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+}
+.backToTop i {
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+.backToTop i::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    border: 2px solid #c50ceb;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: btnAnimation 1s linear infinite;
+    -webkit-animation: btnAnimation 1s linear infinite;
+}
+@keyframes btnAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+
+
+/* nav part css start */
+nav {
+    background-color: #1C1E53;
+    padding: 20px 0 !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    color: #fff !important;
+    padding: 0 20px !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+nav ul li a.active {
+    color: #c50ceb !important;
+}
+nav ul li a:hover {
+    color: #c50ceb !important;
+}
+.contact-us {
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 10px 20px !important;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.contact-us:hover {
+    background-color: #FCD980;
+    border: 1px solid transparent;
+    color: #1B1C2B !important;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar {
+    --bs-navbar-toggler-focus-width: none;
+}
+nav button i {
+    color: #fff;
+}
+.navBG {
+    background: linear-gradient(45deg, #fcd9805e, #1e24d375, #c60ceb71);
+    backdrop-filter: blur(20px);
+    animation: navAnimation 2s;
+    -webkit-animation: navAnimation 2s;
+}
+@keyframes navAnimation {
+    from{
+        top: -40px;
+    }
+    to{
+        top: 0;
+    }
+}
+/* nav part css end */
+
+
+
+/* about us part css start */
+#about-us {
+    padding: 120px 0;
+}
+.about-us-text {
+    margin-top: 50px;
+}
+.about-us-text h1 {
+    padding: 0 100px 0 0;
+}
+.about-us-text p {
+    padding: 20px 150px 0 0;
+}
+.about-us-img img {
+    width: 100%;
+}
+/* about us part css start */
+
+
+
+/* who we are part css start */
+#who-we-are {
+    padding: 70px 0;
+    background-color: #F4F5F5;
+}
+.who-we-are-inner img {
+    width: 100%;
+    margin-top: 50px;
+}
+/* who we are part css start */
+
+
+
+/* process part css start */
+#process {
+    padding: 70px 0;
+}
+.process-items {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.process-items::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border: 1px dashed royalblue;
+    top: 0;
+    left: 0;
+}
+.process-items::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: royalblue;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.process-head h2 {
+    font-weight: 600;
+    font-size: 40px;
+}
+/* process part css start */
+
+
+
+/* our mission part css start */
+#our-mission {
+    padding: 70px 0;
+    background-color: #EEF4FA;
+}
+.our-mission-text {
+    padding-top: 50px;
+}
+.our-mission-text h3 {
+    margin: 20px 0;
+}
+.our-mission-text p {
+    padding: 0 90px 0 0;
+}
+.our-mission-img img {
+    width: 100%;
+}
+.our-vision {
+    margin-top: 70px;
+}
+.our-mission-text2 {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.our-mission-text2 h3 {
+    margin: 20px 0;
+}
+.our-mission-text2 p {
+    padding: 0 90px 0 0;
+}
+/* our mission part css start */
+
+
+
+/* benefits part css start */
+#benefits {
+    padding: 70px 0;
+}
+.benefits-head {
+    text-align: center;
+}
+.benefits-head h3 {
+    padding: 0 400px;
+}
+.benefits-items {
+    background-color: #EEF4FA;
+    padding: 30px;
+    margin-top: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.benefits-items:hover {
+    box-shadow: 1px 1px 10px #1c1e5367;
+}
+.benefits-items h4 {
+    margin: 20px 0;
+}
+.logo-main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+/* benefits part css start */
+
+
+
+/* team part css start */
+#team {
+    padding: 70px 0;
+    background-color: #EEF4FA;
+}
+.team-head {
+    text-align: center;
+}
+.team-head h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.team-items {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.team-items:hover {
+    box-shadow: 1px 1px 10px #c60ceb94;
+}
+.team-items img {
+    width: 100px;
+    height: 100px;
+}
+.team-items h4 {
+    margin: 20px 0 10px 0;
+}
+/* team part css start */
+
+
+
+/* footer part css start */
+footer {
+    padding: 70px 0 0 0;
+    background-color: #1C1E53;
+}
+.footer-left p {
+    color: #fff;
+    padding: 20px 100px 0 0;
+}
+.footer-right {
+    color: #fff;
+}
+.footer-right h3 {
+    color: #fff;
+}
+.footer-right p {
+    padding: 10px 130px 0 0;
+}
+.footer-icon i {
+    color: #fff;
+    padding: 0 20px 0 0;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.footer-icon i:hover {
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    color: #c50ceb;
+}
+.footer-email-call {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCD980;
+    margin-top: 30px;
+    padding: 20px;
+    margin-right: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.footer-comm h4 {
+    color: #1B1C2B;
+    margin: -10px 0;
+}
+.footer-comm p {
+    color: #1B1C2B;
+    margin: 1px 0;
+}
+.copyright {
+    background-color: #fff;
+}
+.copyright-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright-text p {
+    color: #1B1C2B;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.footer-nav ul li a {
+    color: #1B1C2B;
+    text-decoration: none;
+    padding: 20px 20px;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.footer-nav ul li a.active {
+    color: #c50ceb;
+}
+.footer-nav ul li a:hover {
+    color: #c50ceb;
+}
+/* footer part css end */
